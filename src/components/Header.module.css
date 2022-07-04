@@ -1,0 +1,13 @@
+.header {
+  background: #14152c;
+  color: white;
+  box-sizing: border-box;
+  /* height: 50px;
+  width: 700px; */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

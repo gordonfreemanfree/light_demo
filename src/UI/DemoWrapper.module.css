@@ -1,0 +1,15 @@
+.demowrapper {
+  background: #14152c;
+  box-sizing: border-box;
+
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 500px;
+  /* width: 800px; */
+  color: white;
+  padding-left: 20px;
+}
+.text {
+  padding-left: 10px;
+  padding-top: 20px;
+}
