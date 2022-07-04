@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 
-const imageUrl = 'http://173.249.18.133:1880/images'
+const IMAGEURL = 'http://173.249.18.133:1880/images'
 
 export default function GetImage(props) {
   //
   const fetchImage = async () => {
-    const res = await fetch(imageUrl)
+    const res = await fetch(IMAGEURL)
     const imageBlob = await res.blob()
     const imageObjectURL = URL.createObjectURL(imageBlob)
     props.setImg(imageObjectURL)

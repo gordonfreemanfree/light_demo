@@ -2,14 +2,16 @@ import QRCode from 'qrcode'
 import { useState, useEffect } from 'react'
 
 import classes from './QrCode.module.css'
+
+const PUBLICKEY =
+  'klv16flmx0km3e0ld9ly8pdhec2ccaz3jwmyfpe9c74h7fax4xysz9lsc5msv7'
+
 function QrCode() {
   const [qr, setQr] = useState('')
-  const publicKey =
-    'klv16flmx0km3e0ld9ly8pdhec2ccaz3jwmyfpe9c74h7fax4xysz9lsc5msv7'
 
   useEffect(function GenerateQRCode() {
     QRCode.toDataURL(
-      publicKey,
+      PUBLICKEY,
       {
         width: 200,
         margin: 2,
